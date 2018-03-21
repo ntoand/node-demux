@@ -16,9 +16,10 @@
 				{
 					'include_dirs' : [
 						"<!(node -e \"require('nan')\")",
-						"/usr/include/ffmpeg"
+						"/home/toand/dev/ffmpeg-3.4.2/install/include"
 					],
 					'libraries': [
+						"-L/home/toand/dev/ffmpeg-3.4.2/install/lib"
 						"-lavcodec",
 						"-lavformat",
 						"-lavutil",
